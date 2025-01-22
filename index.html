@@ -40,6 +40,7 @@
         <h1>Welcome to Leaf's Creative World</h1>
         <p>Hi, I’m Leaf! I’m a creative soul with a passion for bringing art to life through videos, photography, and painting. </p>
         <p>Whether I’m behind the lens or holding a brush, I’m always crafting something unique.</p>
+        <button onclick="translatePage()">Translate to Latvian</button>
     </header>
     <main>
         <section id="about">
@@ -101,8 +102,26 @@
             <img src="images/WhatsApp Image 2025-01-22 at 21.14.08_269f4fa5.jpg" alt="Gallery Image 3">
             <img src="images/WhatsApp Image 2025-01-22 at 21.14.11_95c6cbba.jpg" alt="Gallery Image 4">
             <img src="images/WhatsApp Image 2025-01-22 at 21.14.12_6211151a.jpg" alt="Gallery Image 5">
-            
         </div>
     </footer>
+    <div id="google_translate_element" style="display:none;"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+
+        function translatePage() {
+            var googleTranslateElement = document.getElementById('google_translate_element');
+            if (!googleTranslateElement.innerHTML) {
+                googleTranslateElementInit();
+            }
+            var select = googleTranslateElement.querySelector('select');
+            if (select) {
+                select.value = 'lv';
+                select.dispatchEvent(new Event('change'));
+            }
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
