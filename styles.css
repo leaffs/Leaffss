@@ -1,0 +1,82 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #1F1F1F; /* Darker header background */
+    color: #E0E0E0;
+    text-align: center;
+    padding: 2em 0;
+    width: 100%;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+section {
+    background-color: #1F1F1F; /* Darker section background */
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex: 1 1 calc(33% - 2em); /* Three cards per row */
+    box-sizing: border-box;
+    min-width: 300px;
+}
+
+h2 {
+    color: #FFFFFF; /* White headings */
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+a {
+    text-decoration: none;
+    color: #89CFF0; /* Baby blue text */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#socials ul {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+#socials li {
+    display: inline;
+}
